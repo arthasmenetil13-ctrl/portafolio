@@ -25,6 +25,23 @@ Abre http://localhost:3200.
 | `src/app/globals.css` | Colores, placas, filete y animaciones del mundo de rótulo |
 | `PRODUCT.md` | Qué es el sitio, para quién y qué no se puede afirmar |
 
+## Festivos y días hábiles de Colombia
+
+Algoritmo en `src/lib/festivos.ts` (Pascua de Meeus/Jones/Butcher + Ley Emiliani), página interactiva en
+`/festivos` (`/en/festivos`) y API pública:
+
+```
+GET /api/festivos/2026
+GET /api/dias-habiles?desde=2026-12-23&dias=3
+GET /api/dias-habiles?desde=2026-12-23&hasta=2026-12-29
+```
+
+Las pruebas comparan contra los calendarios de 2024, 2025 y 2026:
+
+```bash
+npm test
+```
+
 ## Agregar un proyecto nuevo
 
 1. En `src/content/site.ts`, mueve el proyecto de `shop.items` (En el taller) a donde corresponda, o agrega uno nuevo, en `es` y en `en`.

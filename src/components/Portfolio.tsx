@@ -151,11 +151,21 @@ export default function Portfolio({ t }: { t: Dict }) {
               <li key={it.title} className={i % 2 ? "lg:mt-6" : ""}>
                 <Hanger />
                 <div className="plaque overflow-hidden px-6 pt-7 pb-6">
-                  <span className="sign-caps inline-block rounded-[3px] border-2 border-tinta bg-[repeating-linear-gradient(-45deg,var(--color-lamina)_0_8px,var(--color-tinta)_8px_16px)] p-[3px] text-[0.62rem]">
-                    <span className="block rounded-[2px] bg-tinta px-1.5 py-1 text-lamina">{t.shop.badge}</span>
-                  </span>
+                  {it.href ? (
+                    <span className="tag tag-new text-[0.62rem]">{t.shop.doneBadge}</span>
+                  ) : (
+                    <span className="sign-caps inline-block rounded-[3px] border-2 border-tinta bg-[repeating-linear-gradient(-45deg,var(--color-lamina)_0_8px,var(--color-tinta)_8px_16px)] p-[3px] text-[0.62rem]">
+                      <span className="block rounded-[2px] bg-tinta px-1.5 py-1 text-lamina">{t.shop.badge}</span>
+                    </span>
+                  )}
                   <h3 className="mt-4 text-[1.2rem] font-extrabold leading-snug">{it.title}</h3>
                   <p className="mt-2 leading-snug text-tinta-soft">{it.detail}</p>
+                  {it.href && (
+                    <a href={it.href} className={`plaque plaque-cobalto sign-caps mt-5 text-[0.8rem] ${plaqueLink}`}>
+                      {t.shop.open}
+                      <ArrowUpRight className="size-4" strokeWidth={3} aria-hidden="true" />
+                    </a>
+                  )}
                 </div>
               </li>
             ))}

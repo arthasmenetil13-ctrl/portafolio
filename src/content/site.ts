@@ -33,6 +33,9 @@ export type Entry = {
 
 export type Cert = { name: string; issuer: string; date: string };
 
+// A workshop placard; one with `href` is finished and links to its page.
+export type ShopItem = { title: string; detail: string; href?: string };
+
 // Public address used for absolute link-preview URLs. The old *-six-tawny-95 host 308-redirects here.
 export const siteUrl = "https://carlos-llanos.vercel.app";
 
@@ -186,11 +189,53 @@ const es = {
     title: "En el taller",
     note: "Lo próximo que voy a construir y publicar, uno por uno.",
     badge: "En construcción",
+    doneBadge: "Ya disponible",
+    open: "Probarlo",
     items: [
-      { title: "API de festivos y días hábiles de Colombia", detail: "Para calcular plazos sin pelear con la Ley Emiliani." },
+      {
+        title: "Festivos y días hábiles de Colombia",
+        detail: "Algoritmo y API pública: Pascua, Ley Emiliani y suma de días hábiles para calcular plazos.",
+        href: "/festivos",
+      },
       { title: "Starter SaaS de código abierto", detail: "Login, pagos con Wompi y correos, listo para arrancar un producto." },
       { title: "Tracker de postulaciones", detail: "Un tablero para seguir cada vacante a la que aplico." },
+    ] as ShopItem[],
+  },
+  tool: {
+    metaTitle: "Festivos y días hábiles de Colombia · Carlos Llanos",
+    metaDescription:
+      "Calculadora y API pública de festivos colombianos (Ley Emiliani) y días hábiles. Algoritmo de Pascua de Meeus/Jones/Butcher, probado contra los calendarios oficiales.",
+    back: "Volver al portafolio",
+    title: "Festivos y días hábiles de Colombia",
+    lead:
+      "Un algoritmo que calcula los 18 festivos de cualquier año desde 1984 y suma días hábiles saltando fines de semana y festivos. Es la base para calcular plazos en Estados Judiciales.",
+    calcTitle: "¿Cuándo vence el plazo?",
+    startLabel: "Desde (día de la notificación)",
+    daysLabel: "Días hábiles",
+    dueLabel: "Vence el",
+    countNote: "El conteo empieza el día siguiente a la fecha inicial.",
+    skippedLabel: "Días que no cuentan",
+    reasons: { sabado: "Sábado", domingo: "Domingo", festivo: "Festivo" },
+    noneSkipped: "Ninguno: todos los días del rango son hábiles.",
+    yearTitle: "Festivos del año",
+    prevYear: "Año anterior",
+    nextYear: "Año siguiente",
+    easter: "Domingo de Pascua",
+    rules: { fijo: "Fecha fija", emiliani: "Ley Emiliani", pascua: "Según la Pascua" },
+    movedFrom: "corrido desde el",
+    howTitle: "Cómo funciona",
+    how: [
+      "Calcula el Domingo de Pascua con el algoritmo de Meeus/Jones/Butcher, que solo usa aritmética entera.",
+      "Desde la Pascua salen Jueves y Viernes Santo, y los lunes de Ascensión (+43 días), Corpus Christi (+64) y Sagrado Corazón (+71).",
+      "Siete festivos se corren al lunes siguiente por la Ley Emiliani; seis se quedan en su fecha.",
+      "Para un plazo, recorre los días desde el siguiente a la fecha inicial y solo cuenta los que no son sábado, domingo ni festivo.",
     ],
+    testsNote: "Probado con pruebas automáticas contra los calendarios de 2024, 2025 y 2026, y en todos los años de 1984 a 2100.",
+    apiTitle: "API pública",
+    apiLead: "Gratis, sin llave y con CORS abierto. Devuelve JSON.",
+    source: "Ver el código en GitHub",
+    limits:
+      "No incluye la vacancia judicial ni los cierres de despachos: para un término procesal real hay que sumarlos aparte.",
   },
   history: {
     title: "Trayectoria",
@@ -302,11 +347,53 @@ const en: Dict = {
     title: "In the workshop",
     note: "What I am building and publishing next, one at a time.",
     badge: "Under construction",
+    doneBadge: "Available",
+    open: "Try it",
     items: [
-      { title: "Colombian holidays and business-days API", detail: "Deadline maths without fighting the Emiliani law." },
+      {
+        title: "Colombian holidays and business days",
+        detail: "Algorithm and public API: Easter, the Emiliani law and business-day maths for deadlines.",
+        href: "/en/festivos",
+      },
       { title: "Open source SaaS starter", detail: "Login, Wompi payments and email, ready to start a product." },
       { title: "Job application tracker", detail: "A board to follow every role I apply to." },
     ],
+  },
+  tool: {
+    metaTitle: "Colombian holidays and business days · Carlos Llanos",
+    metaDescription:
+      "Calculator and public API for Colombian public holidays (Emiliani law) and business days. Meeus/Jones/Butcher Easter algorithm, tested against the official calendars.",
+    back: "Back to the portfolio",
+    title: "Colombian holidays and business days",
+    lead:
+      "An algorithm that computes the 18 public holidays of any year since 1984 and adds business days skipping weekends and holidays. It is the base for deadline maths in Estados Judiciales.",
+    calcTitle: "When is the deadline?",
+    startLabel: "From (notice date)",
+    daysLabel: "Business days",
+    dueLabel: "Due on",
+    countNote: "Counting starts the day after the start date.",
+    skippedLabel: "Days that do not count",
+    reasons: { sabado: "Saturday", domingo: "Sunday", festivo: "Holiday" },
+    noneSkipped: "None: every day in the range is a business day.",
+    yearTitle: "Holidays of the year",
+    prevYear: "Previous year",
+    nextYear: "Next year",
+    easter: "Easter Sunday",
+    rules: { fijo: "Fixed date", emiliani: "Emiliani law", pascua: "Easter-based" },
+    movedFrom: "moved from",
+    howTitle: "How it works",
+    how: [
+      "Computes Easter Sunday with the Meeus/Jones/Butcher algorithm, which uses integer arithmetic only.",
+      "From Easter come Holy Thursday and Good Friday, plus the Mondays of Ascension (+43 days), Corpus Christi (+64) and Sacred Heart (+71).",
+      "Seven holidays move to the following Monday under the Emiliani law; six stay on their date.",
+      "For a deadline, it walks the days from the one after the start date and counts only those that are not a Saturday, Sunday or holiday.",
+    ],
+    testsNote: "Covered by automated tests against the 2024, 2025 and 2026 calendars, and across every year from 1984 to 2100.",
+    apiTitle: "Public API",
+    apiLead: "Free, no key, open CORS. Returns JSON.",
+    source: "See the code on GitHub",
+    limits:
+      "It does not include court recess or office closures: for a real procedural deadline those have to be added separately.",
   },
   history: {
     title: "Track record",
