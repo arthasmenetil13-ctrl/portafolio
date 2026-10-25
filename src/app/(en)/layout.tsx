@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { dict } from "@/content/site";
+import { dict, siteUrl } from "@/content/site";
 import { body, sign } from "../fonts";
 import "../globals.css";
 
 const t = dict.en;
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: t.meta.title,
   description: t.meta.description,
   alternates: { languages: { es: "/" } },
