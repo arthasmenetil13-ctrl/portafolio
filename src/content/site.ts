@@ -33,10 +33,8 @@ export type Entry = {
 
 export type Cert = { name: string; issuer: string; date: string };
 
-// Public address used for absolute link-preview URLs; Vercel sets the production host at build time.
-export const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "https://portafolio-six-tawny-95.vercel.app";
+// Public address used for absolute link-preview URLs. The old *-six-tawny-95 host 308-redirects here.
+export const siteUrl = "https://carlos-llanos.vercel.app";
 
 export const contact = {
   email: "carlosllanos437@gmail.com",
