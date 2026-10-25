@@ -1,26 +1,228 @@
 @import "tailwindcss";
 
+/* Rótulo pintado: enamel sign yellow owns the ground, red and cobalt are the painter's two other cans. */
+@theme {
+  --color-lamina: #f6c419;
+  --color-lamina-deep: #e9b10c;
+  --color-rojo: #d7261e;
+  --color-rojo-deep: #a8170f;
+  /* Plaque red: one step deeper than the filete red so cream text clears 4.5:1. */
+  --color-rojo-placa: #b61c15;
+  --color-cobalto: #1d3f9a;
+  --color-cobalto-deep: #132b6e;
+  --color-crema: #f4ecd8;
+  --color-crema-deep: #e6dbc0;
+  --color-tinta: #14110f;
+  --color-tinta-soft: #3a3128;
+
+  --font-sign: var(--font-bungee), sans-serif;
+  --font-body: var(--font-archivo), sans-serif;
+
+  --ease-settle: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --plaque-shadow: 0 14px 22px -12px rgb(20 17 15 / 0.55), 0 3px 6px -2px rgb(20 17 15 / 0.25);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--color-lamina);
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-tinta) var(--color-lamina-deep);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--color-lamina);
+  color: var(--color-tinta);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-cobalto);
+  color: var(--color-crema);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-cobalto);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+}
+
+@layer components {
+/* Painted block caps: the letter, then the painter's red shadow, then a thin ink keyline. */
+.lettering {
+  font-family: var(--font-sign);
+  line-height: 0.92;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+  text-shadow:
+    0.045em 0.045em 0 var(--color-rojo),
+    0.07em 0.07em 0 var(--color-tinta);
+}
+
+.lettering-cream {
+  font-family: var(--font-sign);
+  line-height: 0.95;
+  text-wrap: balance;
+  color: var(--color-crema);
+  text-shadow:
+    0.05em 0.05em 0 var(--color-rojo),
+    0.075em 0.075em 0 var(--color-tinta);
+}
+
+.sign-caps {
+  font-family: var(--font-sign);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+/* Tin plaque: flat enamel, a painted double border, four screws, and the shadow of a hung sheet. */
+.plaque {
+  --plaque-bg: var(--color-crema);
+  --plaque-line: var(--color-rojo);
+  --screw: var(--color-tinta-soft);
+  position: relative;
+  background:
+    radial-gradient(circle at 14px 14px, var(--screw) 0 3px, transparent 3.5px),
+    radial-gradient(circle at calc(100% - 14px) 14px, var(--screw) 0 3px, transparent 3.5px),
+    radial-gradient(circle at 14px calc(100% - 14px), var(--screw) 0 3px, transparent 3.5px),
+    radial-gradient(circle at calc(100% - 14px) calc(100% - 14px), var(--screw) 0 3px, transparent 3.5px),
+    var(--plaque-bg);
+  border: 3px solid var(--color-tinta);
+  border-radius: 10px;
+  box-shadow:
+    inset 0 0 0 5px var(--plaque-bg),
+    inset 0 0 0 8px var(--plaque-line),
+    var(--plaque-shadow);
+}
+
+.plaque-cobalto {
+  --plaque-bg: var(--color-cobalto);
+  --plaque-line: var(--color-lamina);
+  --screw: var(--color-crema-deep);
+  color: var(--color-crema);
+}
+
+.plaque-rojo {
+  --plaque-bg: var(--color-rojo-placa);
+  --plaque-line: var(--color-crema);
+  --screw: var(--color-tinta);
+  color: var(--color-crema);
+}
+
+/* Small plaques (buttons) are too short for screws; they keep the painted double border. */
+.plaque-sm {
+  --screw: transparent;
+  box-shadow:
+    inset 0 0 0 3px var(--plaque-bg),
+    inset 0 0 0 5px var(--plaque-line),
+    var(--plaque-shadow);
+}
+
+/* The page's outer filete: red stripe, yellow gap, cobalt hairline. */
+.filete {
+  border: 6px solid var(--color-rojo);
+  box-shadow:
+    inset 0 0 0 4px var(--color-lamina),
+    inset 0 0 0 7px var(--color-cobalto);
+}
+
+/* State tags are told apart by label and pattern, never by colour alone. */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.35em 0.6em 0.3em;
+  border: 2px solid var(--color-tinta);
+  border-radius: 4px;
+  font-family: var(--font-sign);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  white-space: nowrap;
+  transform-origin: 50% 0;
+}
+
+.tag-watching {
+  background: var(--color-crema);
+  color: var(--color-tinta);
+}
+
+.tag-new {
+  background: radial-gradient(circle, rgb(244 236 216 / 0.22) 1.1px, transparent 1.5px) 0 0 / 7px 7px,
+    var(--color-rojo-deep);
+  color: var(--color-crema);
+}
+
+.tag-due {
+  background: repeating-linear-gradient(-45deg, var(--color-cobalto) 0 6px, var(--color-cobalto-deep) 6px 12px);
+  color: var(--color-crema);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-stretch: 82%;
+}
+}
+
+/* A placard dropped onto its hook: swings in from the top and settles. */
+@keyframes hang {
+  0% {
+    transform: perspective(400px) rotateX(-88deg);
+  }
+  60% {
+    transform: perspective(400px) rotateX(12deg);
+  }
+  80% {
+    transform: perspective(400px) rotateX(-5deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+.hang {
+  animation: hang 700ms var(--ease-settle) both;
+}
+
+/* The alert is re-lettered left to right, like a brush pass. */
+@keyframes brush {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.brush {
+  animation: brush 650ms var(--ease-settle) both;
 }

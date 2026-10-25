@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio · Carlos Llanos
 
-## Getting Started
+Sitio personal de Carlos Andrés Llanos Arrieta, desarrollador full stack en Sincelejo, Colombia.
+Español en `/` e inglés en `/en`.
 
-First, run the development server:
+Hecho con Next.js 16 (App Router), TypeScript y Tailwind CSS 4. Todas las páginas son estáticas.
+
+## Correr en local
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev -- -p 3200
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre http://localhost:3200.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Dónde está cada cosa
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Archivo | Qué contiene |
+| --- | --- |
+| `src/content/site.ts` | Todo el texto en español e inglés, el stack, la trayectoria y las certificaciones |
+| `src/components/Portfolio.tsx` | La página completa |
+| `src/components/Board.tsx` | El tablero «Hoy se vigila» y el aviso (datos de ejemplo) |
+| `src/components/StackMap.tsx` | El mapa de cómo está armado Estados Judiciales |
+| `src/app/globals.css` | Colores, placas, filete y animaciones del mundo de rótulo |
+| `PRODUCT.md` | Qué es el sitio, para quién y qué no se puede afirmar |
 
-## Learn More
+## Agregar un proyecto nuevo
 
-To learn more about Next.js, take a look at the following resources:
+1. En `src/content/site.ts`, mueve el proyecto de `shop.items` (En el taller) a donde corresponda, o agrega uno nuevo, en `es` y en `en`.
+2. Si el proyecto usa una tecnología nueva, agrégala a `stack`.
+3. Corre `npm run build` para comprobar que compila.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Publicar en Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Sube el repositorio a GitHub.
+2. En vercel.com, importa el repositorio. No hace falta configurar nada: Vercel detecta Next.js.
+3. Cuando tengas la URL, ponla en la sección Destacado de tu LinkedIn.

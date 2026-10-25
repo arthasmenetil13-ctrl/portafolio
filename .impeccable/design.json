@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T00:38:37.469Z",
+  "title": "Design System: Carlos Llanos · Portafolio",
+  "extensions": {
+    "colorMeta": {
+      "lamina": {
+        "role": "primary",
+        "displayName": "Sign Enamel Yellow",
+        "canonical": "#f6c419",
+        "tonalRamp": [
+          "oklch(15% 0.060 89.5)",
+          "oklch(26% 0.060 89.5)",
+          "oklch(37% 0.168 89.5)",
+          "oklch(48% 0.168 89.5)",
+          "oklch(59% 0.168 89.5)",
+          "oklch(70% 0.168 89.5)",
+          "oklch(82% 0.168 89.5)",
+          "oklch(95% 0.060 89.5)"
+        ]
+      },
+      "lamina-deep": {
+        "role": "primary",
+        "displayName": "Worn Enamel Yellow",
+        "canonical": "#e9b10c",
+        "tonalRamp": [
+          "oklch(15% 0.060 85.3)",
+          "oklch(26% 0.060 85.3)",
+          "oklch(37% 0.160 85.3)",
+          "oklch(48% 0.160 85.3)",
+          "oklch(59% 0.160 85.3)",
+          "oklch(70% 0.160 85.3)",
+          "oklch(82% 0.160 85.3)",
+          "oklch(95% 0.060 85.3)"
+        ]
+      },
+      "rojo": {
+        "role": "secondary",
+        "displayName": "Filete Red",
+        "canonical": "#d7261e",
+        "tonalRamp": [
+          "oklch(15% 0.060 28.8)",
+          "oklch(26% 0.060 28.8)",
+          "oklch(37% 0.212 28.8)",
+          "oklch(48% 0.212 28.8)",
+          "oklch(59% 0.212 28.8)",
+          "oklch(70% 0.212 28.8)",
+          "oklch(82% 0.212 28.8)",
+          "oklch(95% 0.060 28.8)"
+        ]
+      },
+      "rojo-deep": {
+        "role": "secondary",
+        "displayName": "Deep Oxide Red",
+        "canonical": "#a8170f",
+        "tonalRamp": [
+          "oklch(15% 0.060 29.3)",
+          "oklch(26% 0.060 29.3)",
+          "oklch(37% 0.179 29.3)",
+          "oklch(48% 0.179 29.3)",
+          "oklch(59% 0.179 29.3)",
+          "oklch(70% 0.179 29.3)",
+          "oklch(82% 0.179 29.3)",
+          "oklch(95% 0.060 29.3)"
+        ]
+      },
+      "rojo-placa": {
+        "role": "secondary",
+        "displayName": "Plaque Red",
+        "canonical": "#b61c15",
+        "tonalRamp": [
+          "oklch(15% 0.060 28.9)",
+          "oklch(26% 0.060 28.9)",
+          "oklch(37% 0.188 28.9)",
+          "oklch(48% 0.188 28.9)",
+          "oklch(59% 0.188 28.9)",
+          "oklch(70% 0.188 28.9)",
+          "oklch(82% 0.188 28.9)",
+          "oklch(95% 0.060 28.9)"
+        ]
+      },
+      "cobalto": {
+        "role": "tertiary",
+        "displayName": "Cobalt Board",
+        "canonical": "#1d3f9a",
+        "tonalRamp": [
+          "oklch(15% 0.060 264.7)",
+          "oklch(26% 0.060 264.7)",
+          "oklch(37% 0.154 264.7)",
+          "oklch(48% 0.154 264.7)",
+          "oklch(59% 0.154 264.7)",
+          "oklch(70% 0.154 264.7)",
+          "oklch(82% 0.154 264.7)",
+          "oklch(95% 0.060 264.7)"
+        ]
+      },
+      "cobalto-deep": {
+        "role": "tertiary",
+        "displayName": "Night Cobalt",
+        "canonical": "#132b6e",
+        "tonalRamp": [
+          "oklch(15% 0.060 265.1)",
+          "oklch(26% 0.060 265.1)",
+          "oklch(37% 0.120 265.1)",
+          "oklch(48% 0.120 265.1)",
+          "oklch(59% 0.120 265.1)",
+          "oklch(70% 0.120 265.1)",
+          "oklch(82% 0.120 265.1)",
+          "oklch(95% 0.060 265.1)"
+        ]
+      },
+      "crema": {
+        "role": "neutral",
+        "displayName": "Plaque Cream",
+        "canonical": "#f4ecd8",
+        "tonalRamp": [
+          "oklch(15% 0.028 88.8)",
+          "oklch(26% 0.028 88.8)",
+          "oklch(37% 0.028 88.8)",
+          "oklch(48% 0.028 88.8)",
+          "oklch(59% 0.028 88.8)",
+          "oklch(70% 0.028 88.8)",
+          "oklch(82% 0.028 88.8)",
+          "oklch(95% 0.028 88.8)"
+        ]
+      },
+      "crema-deep": {
+        "role": "neutral",
+        "displayName": "Aged Cream",
+        "canonical": "#e6dbc0",
+        "tonalRamp": [
+          "oklch(15% 0.038 88.5)",
+          "oklch(26% 0.038 88.5)",
+          "oklch(37% 0.038 88.5)",
+          "oklch(48% 0.038 88.5)",
+          "oklch(59% 0.038 88.5)",
+          "oklch(70% 0.038 88.5)",
+          "oklch(82% 0.038 88.5)",
+          "oklch(95% 0.038 88.5)"
+        ]
+      },
+      "tinta": {
+        "role": "neutral",
+        "displayName": "Sign Ink",
+        "canonical": "#14110f",
+        "tonalRamp": [
+          "oklch(15% 0.006 55.9)",
+          "oklch(26% 0.006 55.9)",
+          "oklch(37% 0.006 55.9)",
+          "oklch(48% 0.006 55.9)",
+          "oklch(59% 0.006 55.9)",
+          "oklch(70% 0.006 55.9)",
+          "oklch(82% 0.006 55.9)",
+          "oklch(95% 0.006 55.9)"
+        ]
+      },
+      "tinta-soft": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "#3a3128",
+        "tonalRamp": [
+          "oklch(15% 0.020 67.0)",
+          "oklch(26% 0.020 67.0)",
+          "oklch(37% 0.020 67.0)",
+          "oklch(48% 0.020 67.0)",
+          "oklch(59% 0.020 67.0)",
+          "oklch(70% 0.020 67.0)",
+          "oklch(82% 0.020 67.0)",
+          "oklch(95% 0.020 67.0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Painted Display",
+        "purpose": "The name on the sign strip and the closing board; painted lettering with red then ink offset shadow."
+      },
+      "headline": {
+        "displayName": "Section Board",
+        "purpose": "Section headings (project, workshop, history); in-plaque board titles step down."
+      },
+      "title": {
+        "displayName": "Sign Caps",
+        "purpose": "Shadowless Bungee for ledger headings, plaque button labels, channel lines and the role line."
+      },
+      "body": {
+        "displayName": "Reading Grotesque",
+        "purpose": "All sentences; leads at 1.1 to 1.15rem capped at 56 to 60ch."
+      },
+      "data": {
+        "displayName": "Condensed Measure",
+        "purpose": "Radicados, dates, durations, the Bogotá clock; tabular, 82% width, right-aligned in lists."
+      },
+      "label": {
+        "displayName": "Tag Label",
+        "purpose": "State tags and sample / en construcción badges."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hung-plaque",
+        "value": "0 14px 22px -12px rgb(20 17 15 / 0.55), 0 3px 6px -2px rgb(20 17 15 / 0.25)",
+        "purpose": "Every plaque and plaque button, after its painted inset borders (CSS var --plaque-shadow)."
+      },
+      {
+        "name": "plaque-double-border",
+        "value": "inset 0 0 0 5px <plaque-bg>, inset 0 0 0 8px <plaque-line>",
+        "purpose": "Painted inner border; 3px / 5px on small plaques."
+      },
+      {
+        "name": "small-hung-card",
+        "value": "0 10px 16px -10px rgb(20 17 15 / 0.6)",
+        "purpose": "Message cards and the language switch."
+      },
+      {
+        "name": "lifted-node",
+        "value": "0 12px 18px -10px rgb(20 17 15 / 0.7)",
+        "purpose": "Architecture node lit by a stack swatch, with a 4px lift."
+      },
+      {
+        "name": "painted-lettering",
+        "value": "text-shadow: 0.045em 0.045em 0 #d7261e, 0.07em 0.07em 0 #14110f",
+        "purpose": "Block-cap lettering on yellow and cream; cream lettering uses 0.05em / 0.075em; on red boards the drop is cobalt."
+      },
+      {
+        "name": "filete",
+        "value": "border: 6px solid #d7261e; box-shadow: inset 0 0 0 4px #f6c419, inset 0 0 0 7px #1d3f9a",
+        "purpose": "The page frame."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All hang, brush and hover-lift motion."
+      },
+      {
+        "name": "hang",
+        "value": "700ms ease-settle; rotateX -88deg > 12deg > -5deg > 0 at 400px perspective",
+        "purpose": "Tags and placards dropping onto their hook."
+      },
+      {
+        "name": "brush",
+        "value": "650ms ease-settle; clip-path inset(0 100% 0 0) to inset(0)",
+        "purpose": "Content re-lettered left to right."
+      },
+      {
+        "name": "hover-lift",
+        "value": "translateY(-2px), 200ms ease-settle",
+        "purpose": "Action plaques on hover; return on press."
+      },
+      {
+        "name": "board-cycle",
+        "value": "4200ms",
+        "purpose": "Active board row advance; pauses on hover/selection, off under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action Plaque",
+      "kind": "button",
+      "refersTo": "button-plaque-primary",
+      "description": "The one red plaque in an action group (Escríbeme, mailto).",
+      "html": "<a class=\"ds-plaque-btn-rojo\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg>ESCRÍBEME</a>",
+      "css": ".ds-plaque-btn-rojo{position:relative;border:3px solid var(--color-tinta,#14110f);border-radius:10px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 20px;background:#b61c15;color:#f4ecd8;font-family:var(--font-sign,Bungee,sans-serif);font-size:0.9rem;letter-spacing:0.02em;line-height:1;text-decoration:none;cursor:pointer;box-shadow:inset 0 0 0 3px #b61c15,inset 0 0 0 5px #f4ecd8,0 14px 22px -12px rgb(20 17 15 / 0.55), 0 3px 6px -2px rgb(20 17 15 / 0.25);transition:transform 200ms cubic-bezier(0.16,1,0.3,1);}.ds-plaque-btn-rojo:hover{transform:translateY(-2px);}.ds-plaque-btn-rojo:active{transform:translateY(0);}.ds-plaque-btn-rojo:focus-visible{outline:3px solid #1d3f9a;outline-offset:3px;border-radius:10px;}"
+    },
+    {
+      "name": "Cream Action Plaque",
+      "kind": "button",
+      "refersTo": "button-plaque",
+      "description": "Secondary actions: LinkedIn, GitHub, visit project.",
+      "html": "<a class=\"ds-plaque-btn\" href=\"#\">LINKEDIN</a>",
+      "css": ".ds-plaque-btn{position:relative;border:3px solid var(--color-tinta,#14110f);border-radius:10px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 20px;background:#f4ecd8;color:#14110f;font-family:var(--font-sign,Bungee,sans-serif);font-size:0.9rem;letter-spacing:0.02em;line-height:1;text-decoration:none;cursor:pointer;box-shadow:inset 0 0 0 3px #f4ecd8,inset 0 0 0 5px #d7261e,0 14px 22px -12px rgb(20 17 15 / 0.55), 0 3px 6px -2px rgb(20 17 15 / 0.25);transition:transform 200ms cubic-bezier(0.16,1,0.3,1);}.ds-plaque-btn:hover{transform:translateY(-2px);}.ds-plaque-btn:active{transform:translateY(0);}.ds-plaque-btn:focus-visible{outline:3px solid #1d3f9a;outline-offset:3px;border-radius:10px;}"
+    },
+    {
+      "name": "Cobalt Action Plaque",
+      "kind": "button",
+      "refersTo": "button-plaque-cobalto",
+      "description": "In-page navigation (Ver el proyecto).",
+      "html": "<a class=\"ds-plaque-btn-cobalto\" href=\"#\">VER EL PROYECTO</a>",
+      "css": ".ds-plaque-btn-cobalto{position:relative;border:3px solid var(--color-tinta,#14110f);border-radius:10px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 20px;background:#1d3f9a;color:#f4ecd8;font-family:var(--font-sign,Bungee,sans-serif);font-size:0.9rem;letter-spacing:0.02em;line-height:1;text-decoration:none;cursor:pointer;box-shadow:inset 0 0 0 3px #1d3f9a,inset 0 0 0 5px #f6c419,0 14px 22px -12px rgb(20 17 15 / 0.55), 0 3px 6px -2px rgb(20 17 15 / 0.25);transition:transform 200ms cubic-bezier(0.16,1,0.3,1);}.ds-plaque-btn-cobalto:hover{transform:translateY(-2px);}.ds-plaque-btn-cobalto:active{transform:translateY(0);}.ds-plaque-btn-cobalto:focus-visible{outline:3px solid #1d3f9a;outline-offset:3px;border-radius:10px;}"
+    },
+    {
+      "name": "Tin Plaque",
+      "kind": "card",
+      "refersTo": "plaque",
+      "description": "The only container: cream board with ink edge, painted double border, four screws and a hung shadow.",
+      "html": "<section class=\"ds-plaque\"><h3 class=\"ds-plaque-title\">HOY SE VIGILA</h3><p class=\"ds-plaque-body\">Juzgado 2 Civil Municipal de Sincelejo</p></section>",
+      "css": ".ds-plaque{position:relative;border:3px solid var(--color-tinta,#14110f);border-radius:10px;padding:28px 32px 24px;color:#14110f;background:radial-gradient(circle at 14px 14px, #3a3128 0 3px, transparent 3.5px), radial-gradient(circle at calc(100% - 14px) 14px, #3a3128 0 3px, transparent 3.5px), radial-gradient(circle at 14px calc(100% - 14px), #3a3128 0 3px, transparent 3.5px), radial-gradient(circle at calc(100% - 14px) calc(100% - 14px), #3a3128 0 3px, transparent 3.5px),#f4ecd8;box-shadow:inset 0 0 0 5px #f4ecd8,inset 0 0 0 8px #d7261e,0 14px 22px -12px rgb(20 17 15 / 0.55), 0 3px 6px -2px rgb(20 17 15 / 0.25);max-width:420px;}.ds-plaque-title{margin:0;font-family:var(--font-sign,Bungee,sans-serif);font-weight:400;font-size:2rem;line-height:0.92;letter-spacing:0.01em;text-shadow:0.045em 0.045em 0 #d7261e,0.07em 0.07em 0 #14110f;}.ds-plaque-body{margin:12px 0 0;font-family:var(--font-body,Archivo,sans-serif);font-size:1.0625rem;line-height:1.6;color:#3a3128;}"
+    },
+    {
+      "name": "Cobalt Plaque",
+      "kind": "card",
+      "refersTo": "plaque-cobalto",
+      "description": "Secondary board (the alert plaque); yellow painted line, pale screws, cream lettering.",
+      "html": "<section class=\"ds-plaque-cobalto\"><h3 class=\"ds-plaque-cobalto-title\">LA ALERTA QUE SALE</h3><p class=\"ds-plaque-cobalto-body\">Por WhatsApp y por correo.</p></section>",
+      "css": ".ds-plaque-cobalto{position:relative;border:3px solid var(--color-tinta,#14110f);border-radius:10px;padding:28px 28px 24px;color:#f4ecd8;background:radial-gradient(circle at 14px 14px, #e6dbc0 0 3px, transparent 3.5px), radial-gradient(circle at calc(100% - 14px) 14px, #e6dbc0 0 3px, transparent 3.5px), radial-gradient(circle at 14px calc(100% - 14px), #e6dbc0 0 3px, transparent 3.5px), radial-gradient(circle at calc(100% - 14px) calc(100% - 14px), #e6dbc0 0 3px, transparent 3.5px),#1d3f9a;box-shadow:inset 0 0 0 5px #1d3f9a,inset 0 0 0 8px #f6c419,0 14px 22px -12px rgb(20 17 15 / 0.55), 0 3px 6px -2px rgb(20 17 15 / 0.25);max-width:420px;}.ds-plaque-cobalto-title{margin:0;font-family:var(--font-sign,Bungee,sans-serif);font-weight:400;font-size:1.6rem;line-height:0.95;color:#f4ecd8;text-shadow:0.05em 0.05em 0 #d7261e,0.075em 0.075em 0 #14110f;}.ds-plaque-cobalto-body{margin:12px 0 0;font-family:var(--font-body,Archivo,sans-serif);line-height:1.6;}"
+    },
+    {
+      "name": "State Tags",
+      "kind": "chip",
+      "refersTo": "tag-watching",
+      "description": "Case states told apart by label and pattern: plain, dotted, hatched.",
+      "html": "<span class=\"ds-tag ds-tag-watching\">VIGILANDO</span> <span class=\"ds-tag ds-tag-new\">ACTUACIÓN NUEVA</span> <span class=\"ds-tag ds-tag-due\">POR VENCER</span>",
+      "css": ".ds-tag{display:inline-flex;align-items:center;gap:0.4em;padding:0.35em 0.6em 0.3em;border:2px solid #14110f;border-radius:4px;font-family:var(--font-sign,Bungee,sans-serif);font-size:0.72rem;letter-spacing:0.04em;line-height:1.1;white-space:nowrap;transform-origin:50% 0;animation:ds-hang 700ms cubic-bezier(0.16,1,0.3,1) both;}.ds-tag-watching{background:#f4ecd8;color:#14110f;}.ds-tag-new{background:radial-gradient(circle, rgb(244 236 216 / 0.22) 1.1px, transparent 1.5px) 0 0 / 7px 7px,#a8170f;color:#f4ecd8;}.ds-tag-due{background:repeating-linear-gradient(-45deg,#1d3f9a 0 6px,#132b6e 6px 12px);color:#f4ecd8;}@keyframes ds-hang{0%{transform:perspective(400px) rotateX(-88deg);}60%{transform:perspective(400px) rotateX(12deg);}80%{transform:perspective(400px) rotateX(-5deg);}100%{transform:perspective(400px) rotateX(0deg);}}@media (prefers-reduced-motion: reduce){.ds-tag{animation:none;}}"
+    },
+    {
+      "name": "Stack Swatch Chip",
+      "kind": "chip",
+      "refersTo": "chip-swatch",
+      "description": "Toggle that lights the architecture nodes a technology powers.",
+      "html": "<button class=\"ds-swatch\" type=\"button\" aria-pressed=\"false\">FastAPI</button> <button class=\"ds-swatch\" type=\"button\" aria-pressed=\"true\">PostgreSQL</button>",
+      "css": ".ds-swatch{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 12px;border:3px solid #14110f;border-radius:6px;background:#f4ecd8;color:#14110f;font-family:var(--font-body,Archivo,sans-serif);font-weight:600;font-size:0.92rem;cursor:pointer;transition:background-color 200ms;}.ds-swatch:hover{background:#e6dbc0;}.ds-swatch[aria-pressed=\"true\"]{background:#f6c419;}.ds-swatch:focus-visible{outline:3px solid #1d3f9a;outline-offset:3px;}"
+    },
+    {
+      "name": "Language Switch",
+      "kind": "nav",
+      "refersTo": "lang-switch",
+      "description": "Small cobalt plaque at the sign strip's right edge.",
+      "html": "<a class=\"ds-lang\" href=\"#\" hreflang=\"en\">ENGLISH</a>",
+      "css": ".ds-lang{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border:3px solid #14110f;border-radius:6px;background:#1d3f9a;color:#f4ecd8;font-family:var(--font-sign,Bungee,sans-serif);font-size:0.78rem;letter-spacing:0.02em;line-height:1;text-decoration:none;box-shadow:0 10px 16px -10px rgb(20 17 15 / 0.6);transition:background-color 200ms;}.ds-lang:hover{background:#132b6e;}.ds-lang:focus-visible{outline:3px solid #1d3f9a;outline-offset:3px;}"
+    },
+    {
+      "name": "Hung Placard",
+      "kind": "custom",
+      "refersTo": "plaque",
+      "description": "Upcoming work: a cream plaque hung from an ink wire hanger, with the en construcción hazard badge.",
+      "html": "<div class=\"ds-placard\"><svg class=\"ds-hanger\" viewBox=\"0 0 120 34\" aria-hidden=\"true\"><circle cx=\"60\" cy=\"5\" r=\"4\" fill=\"none\" stroke=\"#14110f\" stroke-width=\"2.5\"/><path d=\"M57 8 22 32M63 8l35 24\" fill=\"none\" stroke=\"#14110f\" stroke-width=\"2.5\" stroke-linecap=\"round\"/></svg><div class=\"ds-placard-board\"><span class=\"ds-badge-wip\"><span>EN CONSTRUCCIÓN</span></span><h3>Next project title</h3><p>One line of detail, no claims.</p></div></div>",
+      "css": ".ds-placard{max-width:320px;}.ds-hanger{display:block;width:112px;height:32px;margin:0 auto -4px;}.ds-placard-board{position:relative;border:3px solid var(--color-tinta,#14110f);border-radius:10px;padding:28px 24px 24px;color:#14110f;background:radial-gradient(circle at 14px 14px, #3a3128 0 3px, transparent 3.5px), radial-gradient(circle at calc(100% - 14px) 14px, #3a3128 0 3px, transparent 3.5px), radial-gradient(circle at 14px calc(100% - 14px), #3a3128 0 3px, transparent 3.5px), radial-gradient(circle at calc(100% - 14px) calc(100% - 14px), #3a3128 0 3px, transparent 3.5px),#f4ecd8;box-shadow:inset 0 0 0 5px #f4ecd8,inset 0 0 0 8px #d7261e,0 14px 22px -12px rgb(20 17 15 / 0.55), 0 3px 6px -2px rgb(20 17 15 / 0.25);}.ds-placard-board h3{margin:16px 0 0;font-family:var(--font-body,Archivo,sans-serif);font-weight:800;font-size:1.2rem;line-height:1.3;}.ds-placard-board p{margin:8px 0 0;color:#3a3128;line-height:1.35;font-family:var(--font-body,Archivo,sans-serif);}.ds-badge-wip{display:inline-block;padding:3px;border:2px solid #14110f;border-radius:3px;background:repeating-linear-gradient(-45deg,#f6c419 0 8px,#14110f 8px 16px);font-family:var(--font-sign,Bungee,sans-serif);font-size:0.62rem;}.ds-badge-wip span{display:block;border-radius:2px;background:#14110f;color:#f6c419;padding:4px 6px;}"
+    },
+    {
+      "name": "Message Card",
+      "kind": "card",
+      "refersTo": "message-card",
+      "description": "What goes out by WhatsApp or email, re-lettered by a brush wipe when the active row changes.",
+      "html": "<div class=\"ds-msg\"><p class=\"ds-msg-channel\">POR WHATSAPP</p><p class=\"ds-msg-lead\">Nueva actuación en tu proceso</p><p class=\"ds-msg-data\">70001-40-03-002-2026-00123-00</p></div>",
+      "css": ".ds-msg{max-width:360px;padding:16px;border:3px solid #14110f;border-radius:8px;background:#f4ecd8;color:#14110f;box-shadow:0 10px 16px -10px rgb(20 17 15 / 0.6);animation:ds-brush 650ms cubic-bezier(0.16,1,0.3,1) both;font-family:var(--font-body,Archivo,sans-serif);}.ds-msg-channel{margin:0;font-family:var(--font-sign,Bungee,sans-serif);font-size:0.78rem;color:#a8170f;}.ds-msg-lead{margin:8px 0 0;font-weight:600;line-height:1.35;}.ds-msg-data{margin:4px 0 0;font-weight:700;font-variant-numeric:tabular-nums;font-stretch:82%;}@keyframes ds-brush{from{clip-path:inset(0 100% 0 0);}to{clip-path:inset(0 0 0 0);}}@media (prefers-reduced-motion: reduce){.ds-msg{animation:none;}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "El Rótulo Pintado",
+    "overview": "The site is the hand-painted signboard of a Costa business that opens every day. Sign-yellow enamel owns the ground; everything that carries information is a tin plaque screwed or hung onto it: cream boards, cobalt boards, one red board for the answer. Lettering is painted block caps with the painter's red drop and a thin ink keyline. The world is loud in colour and flat in material: enamel, paint and tin, no glass, no blur, no blended gradients.\n\nDensity is that of a working sign, not a brochure: large painted headings, short readable paragraphs in a sturdy grotesque, and data (radicados, dates, durations) set in condensed tabular figures and right-aligned like measures. Structure comes from painted rules: 3px ink borders, dashed dividers, filete stripes. Motion belongs to the material: placards drop onto their hook and settle, an alert is re-lettered left to right like a brush pass; nothing floats or fades in on scroll, and all motion collapses under reduced-motion.\n\nConfirmed rejections, from the direction contract: the dark developer-portfolio hero (name, tagline, gradient, card row), the white résumé grid, glass, smooth gradients and neon.",
+    "keyCharacteristics": [
+      "Committed colour: yellow enamel ground with red, cobalt and cream as the painter's other cans.",
+      "Tin plaques as the only container: thick ink edge, painted inner double border, corner screws, a hung-sheet drop shadow.",
+      "Painted block-cap lettering (Bungee) with a hard red-then-ink offset shadow.",
+      "Archivo for reading, its width axis condensed for tabular data.",
+      "State is named and patterned (plain, dotted, hatched), never colour alone.",
+      "Hard-stop painted patterns (stripes, hatching, dots) are allowed; blended gradients are not."
+    ],
+    "rules": [
+      {
+        "name": "The Enamel Ground Rule",
+        "body": "Yellow is the page, not an accent. New surfaces hang plaques on lamina; they never introduce a white or dark page ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plaque Red Rule",
+        "body": "Cream text sits on rojo-placa or rojo-deep, never on rojo. Rojo is paint for shadows, stripes and flourishes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Named State Rule",
+        "body": "A state is told apart by its label and its pattern (plain cream, dotted oxide red, cobalt hatch), never by colour alone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Painted Caps Rule",
+        "body": "Bungee is lettering, so it appears only in short runs: names, headings, labels, buttons. Sentences are always Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Measure Rule",
+        "body": "Every real date, duration and identifier is set tabular and condensed, and right-aligned when it sits in a list.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hung Sheet Rule",
+        "body": "Only hung or screwed objects cast shadows, and always downward. Flat painted elements (tags, badges, stripes, dividers) cast none.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Painter's Drop Rule",
+        "body": "Hard offset shadow belongs to lettering alone, in red (cobalt on red), then ink. It is never put on boxes.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** hang every new block of content on the yellow ground as a plaque: 3px ink border, 10px corners, painted double border, screws when it is taller than a button, the hung plaque shadow.",
+      "**Do** letter headings in Bungee with the painted drop (red then ink; cobalt then ink on a red board).",
+      "**Do** use rojo-placa for any red surface carrying cream text, and keep the primary action as the one red plaque in its group.",
+      "**Do** name every state in words and give it its own pattern; add new states as a new label plus pattern.",
+      "**Do** set real dates, durations and identifiers in Archivo tabular at 82% width, right-aligned in lists, and mark synthetic data with the sample badge.",
+      "**Do** animate only as material: placards hang and settle, lettering is brushed on; respect prefers-reduced-motion.",
+      "**Do** add new projects as data: a new placard or a new plaque, not a new layout."
+    ],
+    "donts": [
+      "**Don't** introduce glass, backdrop blur, blended gradients or neon; hard-stop painted stripes, hatches and dots are the only patterned fills.",
+      "**Don't** put a dark developer hero (name, tagline, gradient, card row) or a white résumé grid in front of the sign.",
+      "**Don't** set cream text on filete red (#d7261e); it fails contrast.",
+      "**Don't** tell states apart by colour alone.",
+      "**Don't** put the hard offset shadow on boxes; boxes get the soft hung shadow, lettering gets the painted drop.",
+      "**Don't** set sentences in Bungee.",
+      "**Don't** fade or float content in on scroll."
+    ]
+  }
+}
