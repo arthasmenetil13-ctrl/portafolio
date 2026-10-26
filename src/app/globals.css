@@ -191,6 +191,17 @@ a {
   font-variant-numeric: tabular-nums;
   font-stretch: 82%;
 }
+
+/* SVG charts scale down with their box; on phones the labels are set larger in viewBox units
+   so they still read at about 11px, and secondary label parts drop out. */
+@media (max-width: 40rem) {
+  .chart text {
+    font-size: 34px;
+  }
+  .chart .chart-wide {
+    display: none;
+  }
+}
 }
 
 /* A placard dropped onto its hook: swings in from the top and settles. */

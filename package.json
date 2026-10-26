@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --test --disable-warning=MODULE_TYPELESS_PACKAGE_JSON tests/festivos.test.mjs"
+    "test": "node --test --disable-warning=MODULE_TYPELESS_PACKAGE_JSON tests/festivos.test.mjs tests/trm.test.mjs",
+    "data:trm": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/trm-etl.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.61.0",

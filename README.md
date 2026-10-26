@@ -42,6 +42,17 @@ Las pruebas comparan contra los calendarios de 2024, 2025 y 2026:
 npm test
 ```
 
+## 35 años del dólar en Colombia
+
+Análisis de la TRM oficial en `/dolar` (`/en/dolar`). El ETL descarga los datos de datos.gov.co,
+los limpia y escribe `src/data/trm.json`, que la página dibuja con SVG propio:
+
+```bash
+npm run data:trm
+```
+
+La lógica del análisis está en `src/lib/trm.ts` y sus pruebas en `tests/trm.test.mjs`.
+
 ## Agregar un proyecto nuevo
 
 1. En `src/content/site.ts`, mueve el proyecto de `shop.items` (En el taller) a donde corresponda, o agrega uno nuevo, en `es` y en `en`.
